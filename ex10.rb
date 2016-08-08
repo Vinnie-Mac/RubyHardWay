@@ -25,7 +25,7 @@ I'm going to ask you for a money based figure.
 you give me a figure and I'll give you back just
 10 percent worth of it .. Deal? .. Great
 
-\nSo give me a monetary based figure (eg \£10.67): £"
+\nSo give me a monetary based figure (eg \£10.67): \£"
 money = (gets.chomp.to_f / 10).round(2)
 
 print "
