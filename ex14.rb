@@ -14,11 +14,13 @@ puts "If you do want that, hit return"
 $stdin.gets
 
 puts "Opening the file..."
-target = open(filename, 'r+')
+target = open(filename, 'w+')
 print target.read()
 
 puts "Truncating the file. Goodbye!"
 target.truncate(0)
+
+print "\nTruncated file size is now set to: #{File.size(target)}\n\n"
 
 puts "Now I'm going to ask you for three lines."
 
